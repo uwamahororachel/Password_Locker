@@ -36,5 +36,25 @@ class User:
                 return user   
     
 
+    @classmethod
+    def user_exist(cls,name):
+        '''
+        Method that checks if a account exists from the user list.
+        Args:
+            name: Acc name to search if it exists
+        Returns :
+            Boolean: True or false depending if the account exists
+        '''
+        for user in cls.user_list:
+            if user.password == name:
+                    return user
+
+        return False
+    @classmethod
+    def display_user(cls):
+        '''
+        method that returns the account list
+        '''
+        return cls.user_list    
 
    
