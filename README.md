@@ -19,6 +19,18 @@
 >User have to press L so that he/she can access to the features of the application and put the password, if password if not corrent the applicaiton exit
 <img src="3.png " width="750" title="hover text">
 
+>In case the password is correct the user access the feature of the application
+<img src="4.png " width="750" title="hover text">
+
+>The user can press cc to create passwords for different accounts
+<img src="5.png " width="750" title="hover text">
+
+>dc is used to view all credentials fc to delete the first ones 
+<img src="6.png " width="750" title="hover text">
+
+>The user have to press ft to generate a password and enter the numbers of characters 
+<img src="7.png " width="750" title="hover text">
+
 
 ## Setup/Installation Requirements
      computer with Internet
