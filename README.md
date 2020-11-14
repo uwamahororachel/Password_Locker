@@ -9,6 +9,16 @@
 
 
 
+## BDD
+>After runnig the application user have to put a name an and it will display a menu to him
+<img src="1.png " width="750" title="hover text">
+
+>The user Can press D for checking all available users
+<img src="2.png " width="750" title="hover text">
+
+>User have to press L so that he/she can access to the features of the application and put the password, if password if not corrent the applicaiton exit
+<img src="3.png " width="750" title="hover text">
+
 
 ## Setup/Installation Requirements
      computer with Internet
