@@ -170,3 +170,51 @@ def main():
                             print(f"EMAIL PASSWORD {  email}")
                             print ('\n')
 
+                    elif short_code == 'dc':
+
+                            if display_credentials():
+                                    print("HERE IS THE LIST OF YOUR  CREDENTIALS")
+                                    print('\n')
+
+                                    for  credentials in display_credentials():
+                                            print(f" TWITTER:{credentials.twitter} \n FACEBOOK:{credentials.facebook} \n CANVAS:{credentials.canvas} \n EMAIL:{credentials.email}")
+
+                                    print('\n')
+                            else:
+                                    print('\n')
+                                    print("You dont seem to have any credentials saved yet")
+                                    print('\n')
+                    elif short_code == 'ft' :
+                              print(pw_gen(int(input('How many characters in your password?'))))
+                              print("your password has bees created")
+                    elif short_code == 'fc':     
+                              for  credentials in display_credentials():
+                                      
+                                credentials.delete_credentials()
+                                print("deleted" )
+
+                     elif short_code == 'f':
+
+                             print("Enter the number you want to search for")
+
+                             search_name = input()
+                             if check_existing_credentials(search_name):
+                                     search_credentials = find_credentials(search_name)
+                                     print(f"{search_credentials} {search_credentials.canvas}")
+                                     print('-' * 20)
+
+                                     print(f"facebook.......{search_credentials.facebook}")
+                                     print(f"Email address.......{search_credentials.email}")
+                             else:
+                                     print("That contact does not exist")            
+                    elif short_code == "ex":
+                        print("Bye ....")
+                        break
+                        
+        else:
+             print("I don't get that Shortcode you have used. Please select the other one")
+             print("\n")    
+#     handle.close()                             
+if __name__ == '__main__':
+
+    main()
