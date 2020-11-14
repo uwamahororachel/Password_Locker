@@ -102,7 +102,7 @@ def main():
            
             save_user(create_user(user_name,password)) 
             print ('\n')
-            print(f"THE ACCOUNT HAS BEEN CREATED WUTH USERNAME {user_name} AND PASSWORD {password}.")
+            print(f"THE ACCOUNT HAS BEEN CREATED WITH USERNAME {user_name} AND PASSWORD {password}.")
             print ('\n')
             
         elif short_code == 'd':
@@ -193,20 +193,20 @@ def main():
                                 credentials.delete_credentials()
                                 print("deleted" )
 
-                     elif short_code == 'f':
+                    # elif short_code == 'f':
 
-                             print("Enter the number you want to search for")
+                    #         print("Enter the number you want to search for")
 
-                             search_name = input()
-                             if check_existing_credentials(search_name):
-                                     search_credentials = find_credentials(search_name)
-                                     print(f"{search_credentials} {search_credentials.canvas}")
-                                     print('-' * 20)
+                    #         search_name = input()
+                    #         if check_existing_credentials(search_name):
+                    #                 search_credentials = find_credentials(search_name)
+                    #                 print(f"{search_credentials} {search_credentials.canvas}")
+                    #                 print('-' * 20)
 
-                                     print(f"facebook.......{search_credentials.facebook}")
-                                     print(f"Email address.......{search_credentials.email}")
-                             else:
-                                     print("That contact does not exist")            
+                    #                 print(f"facebook.......{search_credentials.facebook}")
+                    #                 print(f"Email address.......{search_credentials.email}")
+                    #         else:
+                    #                 print("That contact does not exist")            
                     elif short_code == "ex":
                         print("Bye ....")
                         break
